@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    package="vku.vtq.appordermonan">
+
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.SEND_SMS" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/nenapp"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/nenapp"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+            <activity android:name=".User.DoiEmail" />
+            <activity android:name=".User.DoiMatKhau" />
+            <activity android:name=".User.ThongTinCaNhan" />
+            <activity android:name=".Admin.QuanLyMaKhuyenMai" />
+            <activity android:name=".ViewActivity.LichSuHoaDon" />
+            <activity android:name=".Admin.XuLyThanhToan" />
+            <activity android:name=".Admin.XemHoaDon" />
+            <activity android:name=".Notification.ThongBaoThanhCong" />
+            <activity android:name=".Admin.SuaBanAn" />
+            <activity android:name=".Admin.ThemBanAn" />
+            <activity android:name=".Admin.CapNhatBanAn" />
+            <activity android:name=".Admin.SuaMonAn" />
+            <activity android:name=".Admin.XoaSuaMonAn" />
+            <activity android:name=".Notification.DaThanhToanThanhCong" />
+            <activity android:name=".Notification.XuLyHoaDonKhach" />
+            <activity android:name=".ViewActivity.ChayNen">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity android:name=".Admin.ThemMonAn" />
+            <activity android:name=".Admin.Admin_QuanLy" />
+            <activity android:name=".ViewActivity.ChitietMonAn" />
+            <activity
+                android:name=".ViewActivity.Main2Activity"
+                android:label="@string/title_activity_main2" />
+            <activity android:name=".ViewActivity.MainActivity" />
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+            <meta-data
+                android:name="com.google.android.gms.wallet.api.enabled"
+                android:value="true" />
+
+
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/greatfood" />
+            <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+                 notification message. See README(https://goo.gl/6BKBk7) for more. -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorAccent" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="GreatFood" />
+
+        </application>
+
+    </manifest>
